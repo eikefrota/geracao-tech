@@ -130,6 +130,7 @@ form * {
     font-family: "Montserrat", sans-serif;
     font-size: 1rem;
 }
+
 form {
     width: 70%;
     margin: 0 auto;
@@ -231,7 +232,7 @@ footer {
         height: auto;
         width: 100%;
 
-        border: solid yellow;
+        /* border: solid red; */
     }
 
     a {
@@ -243,6 +244,125 @@ footer {
         
         &:hover {
             color: #f9f9f9;
+        }
+    }
+
+    i {
+        color: #999999;
+        font-size: 3rem;
+        border: solid 0.25rem #999999;
+        border-radius: 50%;
+        padding: 5px;
+
+        /* Ao passar o mouse sobre */
+        &:hover {
+            color: #ffc928;
+            border-color: #ffb700;
+            cursor: pointer;
+        }
+    }
+}
+
+.redes-sociais {
+    h3 {
+        text-align: center;
+    }
+
+    div {
+        display: flex;
+        justify-content: space-between;
+        justify-content: space-around;
+        justify-content: space-evenly;
+    }
+}
+
+.menu-responsivo{
+
+    i {
+        font-size: 3rem;
+    }
+}
+
+
+
+/* --- Responsividade (Media Queries) */
+
+/* XS (Extra Small) - Celular Portrait (retrato) */
+@media (max-width: 576px) {
+    nav {
+        background-color: #ffb700;
+
+        .menu {
+            display: none;
+        }
+
+        .menu-responsivo {
+            display: block;
+        }
+
+        footer {
+            flex-direction: column;
+            /* VERIFICAR */
+        }
+    }
+}
+
+/* SM (Small) - Celular Landscape (paisagem) */
+@media (min-width: 576px) {
+    nav {
+        background-color: #007bff;
+
+        .menu {
+            display: none;
+        }
+
+        .menu-responsivo {
+            display: block;
+        }
+    }
+}
+
+/* MD (Medium) - Tablet */
+@media (min-width: 768px) {
+    nav {
+        background-color: #ae00ff;
+
+        .menu {
+            display: none;
+        }
+
+        .menu-responsivo {
+            display: block;
+        }
+    }
+}
+
+/* LG (Large) - Notebooks */
+@media (min-width: 992px) {
+    nav {
+        background-color: #99ff00;
+
+        .menu {
+            display: flex;
+        }
+
+        .menu-responsivo {
+            display: none;
+        }
+    }
+}
+
+/* XL (Extra arge) - Desktop */
+@media (min-width: 1200px) {
+    nav {
+        background-color: #10101db6;
+
+        .menu {
+            display: flex;
+        }
+
+        .menu-responsivo {
+            display: none;
         }
     }
 }
