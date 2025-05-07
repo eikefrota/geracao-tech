@@ -8,16 +8,28 @@
         <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
         <!-- CSS Externo -->
         <link rel="stylesheet" href="./css/style.css" />
+        <!-- Box Icons -->
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     </head>
     <body>
         <!-- Menu de opções -->
         <nav>
-            <ul>
+            <ul class="menu">
                 <li><a href="#">Home</a></li>
                 <li><a href="#produtos">Produtos</a></li>
                 <li><a href="#contato">Contato</a></li>
                 <li><a href="#sobre">Sobre</a></li>
                 <li><a href="#mapa">Mapa</a></li>
+            </ul>
+
+            <!-- Menu Responsivo -->
+            <ul class="menu-responsivo">
+                <i class='bx bx-menu'></i>
+                <!-- <li><a href="#">Home</a></li>
+                <li><a href="#produtos">Produtos</a></li>
+                <li><a href="#contato">Contato</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#mapa">Mapa</a></li> -->
             </ul>
         </nav>
 
@@ -167,6 +179,7 @@
         </main>
 
         <footer>
+            <!-- Dados da Empresa -->
             <div>
                 <h3>Zero85-Games</h3>
 
@@ -178,12 +191,39 @@
 
                 <p>
                     <a href="cadastro.html">Trabalhe conosco</a>
-                <!-- </p> -->
+                </p>
             </div>
 
+            <!-- Link dos Parceiros -->
             <div>Parceiros</div>
 
-            <div>Redes Sociais</div>
+            <!-- Link das Redes Sociais -->
+            <div class="redes-sociais">
+                <h3>Redes Sociais</h3>
+
+                <div>
+                    <!-- Facebook -->
+                    <figure>
+                        <a target="_blank" href="https://www.facebook.com/">
+                            <i class='bx bxl-facebook'></i>
+                        </a>
+                    </figure>
+
+                    <!-- Instagram -->
+                    <figure>
+                        <a target="_blank" href="https://www.instagram.com/">
+                            <i class='bx bxl-instagram'></i>
+                        </a>
+                    </figure>
+
+                    <!-- X (Twitter) -->
+                    <figure>
+                        <a target="_blank" href="https://x.com/">
+                            <i class='bx bxl-twitter'></i>
+                        </a>
+                    </figure>
+                </div>
+            </div>
         </footer>
     </body>
 </html>
