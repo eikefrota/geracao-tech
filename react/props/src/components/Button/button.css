@@ -1,0 +1,29 @@
+button {
+    padding: 0.5rem 1rem;
+    border-radius: 0.3rem;
+    border: solid 1px #999999;
+    margin: 1rem 0.5rem;
+
+    &:hover {
+        filter: brightness(1.1);
+        cursor: pointer;
+    }
+}
+
+.btn-default {
+    background-color: #076eff;
+    color: #ffffff;
+}
+
+.btn-success {
+    background-color: #00c968;
+}
+
+.btn-warning {
+    background-color: #ffdd00;
+}
+
+.btn-danger {
+    background-color: #ff1919;
+    color: #ffffff;
+}
