@@ -67,4 +67,15 @@ const authentication = async (request, response) => {
 };
 
 // Listar todos os usuários
-const listUsers = async () => {};
+const listUsers = async (request, response) => {
+    const { data, error } = await supabase.from("users")
+    .select("id, nome, email");
+
+    if (error) {
+        return response.status(500).json({
+            mensagem: "Erro: ", error
+        });
+    }
+    // Devolve todos os usuários encontrados
+    response.json(data)
+};
